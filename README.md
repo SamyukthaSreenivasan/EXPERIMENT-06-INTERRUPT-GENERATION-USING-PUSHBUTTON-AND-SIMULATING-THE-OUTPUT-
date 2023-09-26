@@ -104,7 +104,7 @@ void HAL_GPIO_EXTI_Callback(UNIT16_t GPIO_Pin)
 		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
 	}
 }
-
+```
 
 ## Output screen shots of proteus  :
  LED ON

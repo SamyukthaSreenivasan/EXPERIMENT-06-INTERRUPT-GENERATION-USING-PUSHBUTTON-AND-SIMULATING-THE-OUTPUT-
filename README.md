@@ -89,14 +89,37 @@ https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
   
 
 ## STM 32 CUBE PROGRAM :
+```
+Developed by:Samyuktha S
+Register Number:212222240089
 
+#include "main.h"
+#include "stdbool.h"
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+void HAL_GPIO_EXTI_Callback(UNIT16_t GPIO_Pin)
+{
+	if((GPIO_Pin == GPIO_PIN_0))
+	{
+		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_1);
+	}
+}
 
 
 ## Output screen shots of proteus  :
- 
+ LED ON
+
+ ![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475703/735b9c00-90df-4218-b156-324147de943d)
+
+LED OFF
+
+![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475703/02f48d68-4721-421a-8aad-c870581c0337)
+
  
  ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- 
+
+ ![image](https://github.com/SamyukthaSreenivasan/EXPERIMENT-06-INTERRUPT-GENERATION-USING-PUSHBUTTON-AND-SIMULATING-THE-OUTPUT-/assets/119475703/1ca21f68-94a5-4e1d-bd9e-e8d8b2146f61)
+
  
 ## Result :
 Interfacing a push button and interrupt genrateion is simulated using proteus 
